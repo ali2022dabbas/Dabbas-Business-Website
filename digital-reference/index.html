@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Reference</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/D-logo.jpg">
+    <link rel="stylesheet" href="/digital-reference/digital-reference.css">
+    </link>
+    <link rel="stylesheet" href="/Bootstrap.css/bootstrap.css">
+    </link>
+</head>
+
+<body>
+    <header>
+        <h1 id="header-h1" class="text-center">DABBAS</h1>
+    </header>
+
+    <section>
+        <div id="form-div">
+            <form id="form" action="/nowhere" class="d-flex justify-content-center">
+                <div id="inputs-div">
+                    <div class="d-block">
+                        <label for="name">Full name:</label>
+                        <input type="text" id="name" class="inputs">
+                    </div>
+                    <div class="d-block">
+                        <label for="phone">Phone No:</label>
+                        <input type="number" id="phone" class="inputs">
+                    </div>
+                    <div class="d-block">
+                        <label for="check-in">Check-in:</label>
+                        <input type="date" id="check-in" class="inputs">
+                    </div>
+                    <div class="d-block">
+                        <label for="P_Q">Price Quotation:</label>
+                        <input type="text" id="P_Q" class="inputs"></input>
+                    </div>
+                    <div class="d-block">
+                        <label for="device-type">Device type:</label>
+                        <input type="text" id="device-type" class="inputs">
+                    </div>
+                    <div class="d-block">
+                        <label for="batch-number">Batch number:</label>
+                        <input type="number" id="batch-number" class="inputs">
+                    </div>
+                    <div class="d-block">
+                        <label for="damage">Damage:</label><br>
+                        <textarea id="damage" rows="3" cols="40" class="inputs"></textarea>
+                    </div>
+                    <input id="submit" type="submit" value="Add">
+                </div>
+            </form>
+        </div>
+        <h2 id="references-heading" class="text-center text-secondary"><i>References</i></h2>
+        <div class=" d-flex justify-content-center mb-4">
+
+            <button id="edit" class="btn btn-lg btn-outline-success me-3">Edit</button>
+
+            <button id="print" class="btn btn-lg btn-outline-primary me-3">&nbsp<svg xmlns="http://www.w3.org/2000/svg"
+                    width="20" height="20" fill="currentColor" class="bi bi-printer me-1" viewBox="0 0 16 16">
+                    <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                    <path
+                        d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z" />
+                </svg>Print &nbsp</button>
+
+            <button id="delete" class="btn btn-lg btn-outline-danger me-3">Delete</button>
+
+        </div>
+        <div id="list"></div>
+    </section>
+    <script src="/Bootstrap.js/bootstrap.js"></script>
+    <script src="/digital-reference/digital-reference.js"></script>
+</body>
+
+</html>
